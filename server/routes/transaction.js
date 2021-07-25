@@ -42,7 +42,8 @@ router.get("/transaction/initTransaction", async (req, res) => {
     ...signature,
     id: id,
   });
-  content.save().catch(() => {
+  content.save().catch((e) => {
+    console.log("error: ", e);
     updateSign(signature, id);
   });
 
