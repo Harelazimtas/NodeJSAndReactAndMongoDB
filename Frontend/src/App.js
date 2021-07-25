@@ -50,6 +50,9 @@ function App() {
           <Route path="/Blockchain-2">
             <BlockchainFinalArr />
           </Route>
+          <Route path="/">
+            <h1 className={style.title}> Blockchain Demo </h1>
+          </Route>
         </Switch>
       </div>
     </Router>
